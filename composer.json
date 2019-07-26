@@ -1,0 +1,10 @@
+{
+    "name": "herem/awd_werkstuk2de-zit_laravel",
+    "authors": [
+        {
+            "name": "Heremans David",
+            "email": "david.heremans@student.ehb.be"
+        }
+    ],
+    "require": {}
+}
