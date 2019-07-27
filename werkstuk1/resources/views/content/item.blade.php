@@ -4,7 +4,10 @@
     <div class="container">
         <div class="row">
             <h2>This is item</h2>
-            <p>We komen van zoekertje met id {{$nieuwsbericht}}</p>
+            <br>
+            <p>Titel: {{$nieuwsbericht['titel']}}</p>
+            <br>
+            <p>Onderwerp: {{$nieuwsbericht['onderwerp']}}</p>
         </div>
     </div>
 
