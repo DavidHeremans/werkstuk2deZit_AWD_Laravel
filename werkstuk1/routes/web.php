@@ -12,9 +12,10 @@
 */
 
 //generic routes
-Route::get('/', function () {
-    return view('content.index');
-})->name('home');
+Route::get('/', [
+    'uses' => 'ItemController@getIndex',
+    'as' => 'home'
+]);
 
 Route::get('/about', function () {
     return view('other.about');
@@ -59,16 +60,23 @@ Route::post('/itemcreate', function(\Illuminate\Http\Request $request, \Illumina
 })->name('itemcreate');
 
 //Admin routes
-Route::name('admin.')->group(function (){
-    Route::get('/admincreate', function () {
-        return view('admin.create');
-    })->name('create');
-    Route::get('/adminedit', function () {
-        return view('admin.edit');
-    })->name('edit');
-    Route::get('/admin', function () {
-        return view('admin.index');
-    })->name('index');
+Route::group(['prefix' => 'admin'], function (){
+    Route::get('', [
+        'uses' => 'AdminController@getIndex',
+        'as' => 'admin.index'
+    ]);
+    Route::get('edit', [
+        'uses' => 'AdminController@getEdit',
+        'as' => 'admin.edit'
+    ]);
+    Route::get('create', [
+        'uses' => 'AdminController@getCreate',
+        'as' => 'admin.create'
+    ]);
 });
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
