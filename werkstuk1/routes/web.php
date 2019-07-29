@@ -21,10 +21,26 @@ Route::get('/about', function () {
     return view('other.about');
 })->name('about');
 
+//User routes
+Route::get('/user', [
+    'uses' => 'UserController@getUser',
+    'as' => 'user'
+]);
+
+Route::post('/userupdate', [
+    'uses' => 'UserController@postUpdateUser',
+    'as' => 'userupdate'
+]);
+
 //item routes
 Route::get('/item/{id}', [
     'uses' => 'ItemController@getItem',
     'as' => 'item'
+]);
+
+Route::get('/item/{id}/like', [
+    'uses' => 'ItemController@getLikeItem',
+    'as' => 'itemlike'
 ]);
 
 
@@ -57,6 +73,7 @@ Route::group(['prefix' => 'admin'], function (){
         'uses' => 'AdminController@getDelete',
         'as' => 'admin.delete'
     ]);
+
 
 });
 

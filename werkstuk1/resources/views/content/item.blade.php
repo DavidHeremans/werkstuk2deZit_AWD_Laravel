@@ -8,6 +8,11 @@
             <p class="lead">Titel: {{$item->title}}</p>
             <br>
             <p>Onderwerp: {{$item->content}}</p>
+            <hr>
+            <p><b>{{count($item->likes)}} likes</b> |
+                <a href="{{route('itemlike', ['id' => $item['id']])}}" class="btn btn-outline-primary btn-sm">Like</a>
+
+            </p>
         </div>
     </div>
 

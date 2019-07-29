@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Like;
 use App\Item;
+use App\Tag;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -10,13 +12,21 @@ class ItemController extends Controller
 {
     //
     public function getIndex(){
-        $items = Item::orderBy('created_at', 'desc')->get();
+        $items = Item::orderBy('created_at', 'desc')->paginate(3);
         return view('content.index', ['items' => $items]);
     }
 
     public function getItem($id){
-        $item = Item::where('id', $id)->first();
+        $item = Item::where('id', $id)->with('likes')->first();
         return view('content.item', ['item' => $item]);
+
+    }
+
+    public function getLikeItem($id){
+        $item = Item::where('id', $id)->first();
+        $like = new Like();
+        $item->likes()->save($like);
+        return redirect()->back();
 
     }
 
@@ -48,6 +58,8 @@ class ItemController extends Controller
         $item->content = $request->input('content');
 
         $item->save();
+
+        $item->tags()->sync( $request->input('tags') === null ? '' : $request->input('tags'));
 
         return redirect()->route('admin.index');
     }

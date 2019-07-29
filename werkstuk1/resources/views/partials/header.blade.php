@@ -10,7 +10,7 @@
                 <a class="nav-link" href="{{route('index')}}">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{route('about')}}">About</a>
+                <a class="nav-link" href="{{route('about')}}">Event</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{route('admin.index')}}">Admin</a>
@@ -39,6 +39,11 @@
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                 {{ csrf_field() }}
                             </form>
+                        </li>
+                        <li>
+                            <a href="{{ route('user') }}">
+                                Profile
+                            </a>
                         </li>
                     </ul>
                 </li>

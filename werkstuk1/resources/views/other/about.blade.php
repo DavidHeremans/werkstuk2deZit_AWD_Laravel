@@ -4,7 +4,7 @@
 
     <div class="container">
         <div class="row">
-            <h2>This is about</h2>
+            <h2>This is event pagina</h2>
         </div>
     </div>
 
