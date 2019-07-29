@@ -1,6 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
+    <img src="/images/IMG_0145.PNG" alt="Responsive image">
 
     <div class="container">
         @foreach($items as $item)

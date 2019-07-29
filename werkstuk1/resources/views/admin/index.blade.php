@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="jumbotron">
+    <div class="container">
 
         <!--controle op sessie data -->
         @if(session('forminput'))
@@ -10,13 +10,18 @@
            <p>Zoekertje aangemaakt met titel: {{session('forminput')}} </p>
         </div>
         @endif
-
-        <h2>Nieuwsbericht 4</h2>
-        <p class="lead">Dit is zeer interessant</p>
-        <hr class="my-4">
-        <p>Dit moet je zeker gedaan hebben</p>
+        <br>
         <a class="btn btn-primary btn-lg" href="{{route('admin.create')}}" role="button">Create</a>
-        <a class="btn btn-primary btn-lg" href="{{route('admin.edit')}}" role="button">Edit</a>
+<hr>
+        @foreach($items as $item)
+        <div class="row">
+            <h2 class="col-lg-8">Title: {{$item->title}}</h2>
+            <a class="col-lg-2 btn btn-info btn-lg" href="{{route('admin.edit', ['id' => $item->id])}}" role="button">Edit</a>
+            <a class="col-lg-2 btn btn-danger btn-xs" href="{{route('admin.delete', ['id' => $item->id])}}" role="button">Delete</a>
+            <hr>
+        </div>
+            @endforeach
+
     </div>
 
 @endsection

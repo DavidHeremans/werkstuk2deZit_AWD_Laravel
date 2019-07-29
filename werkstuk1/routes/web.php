@@ -14,7 +14,7 @@
 //generic routes
 Route::get('/', [
     'uses' => 'ItemController@getIndex',
-    'as' => 'home'
+    'as' => 'index'
 ]);
 
 Route::get('/about', function () {
@@ -22,42 +22,22 @@ Route::get('/about', function () {
 })->name('about');
 
 //item routes
-Route::get('/item/{id}', function ($id) {
-
-    if($id == 1){
-        $data = [
-            'titel' => 'Nieuwsbericht nummer 1',
-            'onderwerp' => 'Wat te doen op ehackb'];
-    }elseif ($id == 2){
-        $data = [
-        'titel' => 'Nieuwsbericht nummer 2',
-        'onderwerp' => 'Dit moet je zeker doen'];
-    }elseif($id == 3){
-        $data = [
-        'titel' => 'Nieuwsbericht nummer 3',
-        'onderwerp' => 'Deze persoon komt spreken'];
-    }
-    return view('content.item', ['nieuwsbericht' => $data]);
-})->name('item');
+Route::get('/item/{id}', [
+    'uses' => 'ItemController@getItem',
+    'as' => 'item'
+]);
 
 
-//create item routes
-Route::post('/itemcreate', function(\Illuminate\Http\Request $request, \Illuminate\Validation\Factory $validator) {
+////create item routes
+Route::post('/itemcreate', [
+    'uses' => 'ItemController@postCreateItem',
+    'as' => 'itemcreate'
+]);
 
-    $validation = $validator->make($request->all(), [
-       'title' => 'required|max:20',
-        'content' => 'required|min:10'
-    ]);
-
-    if($validation->fails()){
-        return redirect()->back()->withErrors($validation);
-    }else{
-        $title = $request->input('title');
-        return redirect('admin')->with('forminput', $title);
-    }
-    //$data = $request->all();
-
-})->name('itemcreate');
+Route::post('/itemupdate', [
+    'uses' => 'ItemController@postUpdateItem',
+    'as' => 'itemupdate'
+]);
 
 //Admin routes
 Route::group(['prefix' => 'admin'], function (){
@@ -65,7 +45,7 @@ Route::group(['prefix' => 'admin'], function (){
         'uses' => 'AdminController@getIndex',
         'as' => 'admin.index'
     ]);
-    Route::get('edit', [
+    Route::get('edit/{id}', [
         'uses' => 'AdminController@getEdit',
         'as' => 'admin.edit'
     ]);
@@ -73,6 +53,11 @@ Route::group(['prefix' => 'admin'], function (){
         'uses' => 'AdminController@getCreate',
         'as' => 'admin.create'
     ]);
+    Route::get('delete/{id}', [
+        'uses' => 'AdminController@getDelete',
+        'as' => 'admin.delete'
+    ]);
+
 });
 
 

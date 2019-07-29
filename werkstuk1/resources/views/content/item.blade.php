@@ -2,12 +2,12 @@
 
 @section('content')
     <div class="container">
-        <div class="row">
+        <div class="jumbotron">
             <h2>This is item</h2>
+            <hr class="my-4">
+            <p class="lead">Titel: {{$item->title}}</p>
             <br>
-            <p>Titel: {{$nieuwsbericht['titel']}}</p>
-            <br>
-            <p>Onderwerp: {{$nieuwsbericht['onderwerp']}}</p>
+            <p>Onderwerp: {{$item->content}}</p>
         </div>
     </div>
 
