@@ -21,7 +21,7 @@
 
         {{ csrf_field() }}
         <input type="hidden" name="id" value="{{Auth::id()}}">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Change</button>
     </form>
     </div>
 
