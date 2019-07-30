@@ -17,9 +17,10 @@ Route::get('/', [
     'as' => 'index'
 ]);
 
-Route::get('/about', function () {
-    return view('other.about');
-})->name('about');
+Route::get('/event',[
+    'uses' => 'EventController@getEvent',
+    'as' => 'event'
+]);
 
 //User routes
 Route::get('/user', [
