@@ -3,8 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="be413ffe-ff50-475f-a3de-79e1bd88bb7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk1/resources/views/content/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/resources/views/content/profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/IMG_0145.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/public/images/IMG_0145.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werkstuk1/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werkstuk1/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werkstuk1/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werkstuk1/resources/views/content/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/resources/views/content/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werkstuk1/resources/views/content/item.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/resources/views/content/item.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werkstuk1/resources/views/other/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/resources/views/other/event.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werkstuk1/resources/views/partials/admin-header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/resources/views/partials/admin-header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/werkstuk1/resources/views/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/resources/views/partials/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werkstuk1/resources/views/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/resources/views/partials/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werkstuk1/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,11 +56,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\EhB18-19\AWD_Werkstuk2deZit_Laravel\werkstuk1\public" />
+      <recent name="C:\EhB18-19\AWD_Werkstuk2deZit_Laravel\werkstuk1\resources\assets" />
       <recent name="C:\EhB18-19\AWD_Werkstuk2deZit_Laravel\werkstuk1\resources\views\layouts\Style" />
       <recent name="C:\EhB18-19\AWD_Werkstuk2deZit_Laravel\werkstuk1\resources\assets\sass" />
       <recent name="C:\EhB18-19\AWD_Werkstuk2deZit_Laravel" />
-      <recent name="C:\EhB18-19\AWD_Werkstuk2deZit_Laravel\werkstuk1\images" />
-      <recent name="C:\EhB18-19\AWD_Werkstuk2deZit_Laravel\werkstuk1\resources\views\content" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -84,6 +93,8 @@
       <workItem from="1564232491578" duration="9257000" />
       <workItem from="1564301663553" duration="28288000" />
       <workItem from="1564405752538" duration="8053000" />
+      <workItem from="1564471519439" duration="8779000" />
+      <workItem from="1564481700985" duration="1700000" />
     </task>
     <servers />
   </component>
