@@ -10,7 +10,10 @@
             <p>Onderwerp: {{$item->content}}</p>
             <hr>
 
-            <p><b>{{count($item->likes)}} likes</b> |
+            <p>{{$item->fullcontent}}</p>
+
+            <p>
+                <b>{{count($item->likes)}} likes</b> |
                 @if(Auth::check())
                 <a href="{{route('itemlike', ['id' => $item['id']])}}" class="btn btn-outline-primary btn-sm">Like</a>
                 @else

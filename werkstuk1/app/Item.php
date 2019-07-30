@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Item extends Model
 {
-    protected $fillable =['title', 'content'];
+    protected $fillable =['title', 'content', 'fullcontent'];
 
     public function likes(){
         return $this->hasMany('App\Like');

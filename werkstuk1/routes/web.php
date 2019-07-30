@@ -17,10 +17,16 @@ Route::get('/', [
     'as' => 'index'
 ]);
 
-Route::get('/event',[
+Route::get('/events',[
     'uses' => 'EventController@getEvent',
-    'as' => 'event'
+    'as' => 'events'
 ]);
+
+Route::get('/event/{id}/registration', [
+    'uses' => 'EventController@getRegisterForEvent',
+    'as' => 'eventregistration'
+]);
+
 
 //User routes
 Route::get('/user', [

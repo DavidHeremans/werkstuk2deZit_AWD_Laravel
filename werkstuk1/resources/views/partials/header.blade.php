@@ -10,7 +10,7 @@
                 <a class="nav-link" href="{{route('index')}}">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{route('event')}}">Event</a>
+                <a class="nav-link" href="{{route('events')}}">Events</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{route('admin.index')}}">Admin</a>
@@ -30,6 +30,11 @@
 
                     <ul class="dropdown-menu">
                         <li>
+                            <a class="dropdown-item" href="{{ route('user') }}">
+                                Profile
+                            </a>
+                        </li>
+                        <li>
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -40,11 +45,7 @@
                                 {{ csrf_field() }}
                             </form>
                         </li>
-                        <li>
-                            <a class="dropdown-item" href="{{ route('user') }}">
-                                Profile
-                            </a>
-                        </li>
+
                     </ul>
                 </li>
             @endguest

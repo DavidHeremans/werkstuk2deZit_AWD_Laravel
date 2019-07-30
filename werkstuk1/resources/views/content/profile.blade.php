@@ -18,7 +18,6 @@
             <input type="text" class="form-control" id="email" name="email" value="{{$user->email}}">
         </div>
 
-
         {{ csrf_field() }}
         <input type="hidden" name="id" value="{{Auth::id()}}">
         <button type="submit" class="btn btn-primary">Change</button>

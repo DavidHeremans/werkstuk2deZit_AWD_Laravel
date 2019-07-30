@@ -19,6 +19,7 @@ class CreateEventTable extends Migration
             $table->string('speaker', 20);
             $table->string('description', 255);
             $table->string('location');
+            $table->dateTime('datetime');
             $table->string('src');
             $table->integer('availablePlaces');
             $table->timestamps();
