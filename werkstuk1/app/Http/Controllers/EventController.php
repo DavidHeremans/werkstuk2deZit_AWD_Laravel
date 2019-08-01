@@ -13,7 +13,7 @@ class EventController extends Controller
 {
     public function getEvent(){
         $events = Event::orderBy('created_at', 'desc')->get();
-        $registrations = Registration::all();
+        $registrations = Registration::where('user_id', '=', Auth::id())->value('id');
         $regevent = DB::table('registrations')->select('event_id')->where('user_id', '=', Auth::id())->pluck('event_id');
         return view('other.events', ['events' => $events, 'registrations'=> $registrations, 'regevent'=> $regevent]);
     }
@@ -25,5 +25,12 @@ class EventController extends Controller
         $registration->user_id = $user;
         $event->registrations()->save($registration);
         return redirect()->back();
+    }
+
+    public function getUnregisterForEvent($id){
+        $event = Registration::find($id);
+        $event->delete();
+
+        return redirect()->action('EventController@getEvent');
     }
 }

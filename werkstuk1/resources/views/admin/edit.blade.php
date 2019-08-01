@@ -12,6 +12,10 @@
                 <label for="onderwerp">Onderwerp</label>
                 <input type="text" class="form-control" id="content" name="content" value="{{$item->content}}">
             </div>
+            <div class="form-group">
+                <label for="onderwerp">Meer info</label>
+                <input type="text" class="form-control" id="fullcontent" name="fullcontent" value="{{$item->fullcontent}}">
+            </div>
 
             @foreach($tags as $tag)
                 <div class="checkbox">

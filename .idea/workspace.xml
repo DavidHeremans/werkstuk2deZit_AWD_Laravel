@@ -3,19 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="be413ffe-ff50-475f-a3de-79e1bd88bb7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werkstuk1/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/app/Http/Controllers/AdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/werkstuk1/app/Http/Controllers/EventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/app/Http/Controllers/EventController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/werkstuk1/app/Http/Controllers/ItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/app/Http/Controllers/ItemController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk1/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk1/app/Registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/app/Registration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk1/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk1/database/migrations/2019_07_30_144331_create_registrations_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/database/migrations/2019_07_30_144331_create_registrations_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werkstuk1/resources/views/admin/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/resources/views/admin/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werkstuk1/resources/views/admin/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/resources/views/admin/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/werkstuk1/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/resources/views/admin/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk1/resources/views/content/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/resources/views/content/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk1/resources/views/content/item.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/resources/views/content/item.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk1/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/resources/views/layouts/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werkstuk1/resources/views/content/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/resources/views/content/profile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/werkstuk1/resources/views/other/events.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/resources/views/other/events.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/werkstuk1/resources/views/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/resources/views/partials/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk1/resources/views/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/resources/views/partials/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/werkstuk1/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +51,8 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -98,7 +96,7 @@
       <workItem from="1564471519439" duration="8779000" />
       <workItem from="1564481700985" duration="14350000" />
       <workItem from="1564558334690" duration="27511000" />
-      <workItem from="1564645771126" duration="6298000" />
+      <workItem from="1564645771126" duration="17475000" />
     </task>
     <servers />
   </component>

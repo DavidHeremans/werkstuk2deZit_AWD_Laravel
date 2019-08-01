@@ -2,12 +2,13 @@
 
 @section('content')
 <br>
+<div class="container">
 <div class="card-deck">
 
 
 
         @foreach($events as $event)
-            <div class="card" >
+            <div class="card text-center" >
 
                 <img src="{{$event['src']}}" class="card-img-top">
                 <div class="card-body">
@@ -17,19 +18,21 @@
                 <p class="card-text">{{$event['description']}}</p>
 
                     <div class="card-text">
-                        <b>{{count($event->registrations)}} / {{$event->availablePlaces}}</b> |
+                     <p> <b>{{count($event->registrations)}} / {{$event->availablePlaces}}</b></p>
 
                         @if(Auth::check() )
                                 @if($regevent->contains($event['id']))
+                                <a href="{{route('unregister', ['id' => $registrations])}}" class="btn btn-outline-danger btn-sm">Schrijf uit</a>
 
-                                <p>Al geregistreerd</p>
-                                @else
+                            @elseif(count($event->registrations) ===  $event->availablePlaces)
+                                    <p>Volzet </p>
+                                    @else
                                 <a href="{{route('eventregistration', ['id' => $event['id']])}}" class="btn btn-outline-primary btn-sm">Registreer</a>
 
                             @endif
 
                         @else
-                            <p>Log in om te liken</p>
+                            <p>Log in om te registreren</p>
                         @endif
 
 
@@ -44,4 +47,6 @@
             <br>
     @endforeach
 </div>
+    </div>
+    <br>
 @endsection

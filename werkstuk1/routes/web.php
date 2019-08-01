@@ -27,6 +27,11 @@ Route::get('/event/{id}/registration', [
     'as' => 'eventregistration'
 ]);
 
+Route::get('/event/registration/{id}', [
+    'uses' => 'EventController@getUnregisterForEvent',
+    'as' => 'unregister'
+]);
+
 
 //User routes
 Route::get('/user', [

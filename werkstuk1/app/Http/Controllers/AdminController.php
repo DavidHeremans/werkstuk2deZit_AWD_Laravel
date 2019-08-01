@@ -23,13 +23,13 @@ class AdminController extends Controller
     }
 
     public function getDelete($id){
-        $item = Item::find($id);
-        $item->likes()->delete();
-        $item->tags()->detach();
-        $item->delete();
+    $item = Item::find($id);
+    $item->likes()->delete();
+    $item->tags()->detach();
+    $item->delete();
 
-       return redirect()->action('AdminController@getIndex');
-    }
+    return redirect()->action('AdminController@getIndex');
+}
 
 
 }

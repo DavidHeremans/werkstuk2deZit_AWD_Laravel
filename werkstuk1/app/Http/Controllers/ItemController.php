@@ -35,12 +35,14 @@ class ItemController extends Controller
     public function postCreateItem(Request $request){
         $this ->validate($request, [
             'title' => 'required|max:20',
-            'content' => 'required|min:10'
+            'content' => 'required|min:10',
+            'fullcontent' => 'required|min:10'
         ]);
 
         $item = new Item([
             'title' => $request->input('title'),
-            'content' => $request->input('content')
+            'content' => $request->input('content'),
+            'fullcontent' => $request->input('fullcontent')
         ]);
 
         $item->save();
@@ -51,13 +53,15 @@ class ItemController extends Controller
     public function postUpdateItem(Request $request){
         $this ->validate($request, [
             'title' => 'required|max:20',
-            'content' => 'required|min:10'
+            'content' => 'required|min:10',
+            'fullcontent' => 'required|min:10'
         ]);
 
         $item = Item::find($request->input('id'));
 
         $item->title = $request->input('title');
         $item->content = $request->input('content');
+        $item->fullcontent = $request->input('fullcontent');
 
         $item->save();
 
