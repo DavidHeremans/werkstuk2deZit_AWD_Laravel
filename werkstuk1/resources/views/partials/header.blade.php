@@ -12,9 +12,11 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{route('events')}}">Events</a>
             </li>
+            @if(Auth::id() === 1)
             <li class="nav-item">
                 <a class="nav-link" href="{{route('admin.index')}}">Admin</a>
             </li>
+                @endif
 
         </ul>
         <ul class="nav navbar-nav navbar-right">

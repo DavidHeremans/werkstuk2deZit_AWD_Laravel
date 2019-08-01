@@ -15,7 +15,7 @@
             <p>
                 <b>{{count($item->likes)}} likes</b> |
                 @if(Auth::check())
-                <a href="{{route('itemlike', ['id' => $item['id']])}}" class="btn btn-outline-primary btn-sm">Like</a>
+                <a href="{{route('itemlike', ['id' => $item['id']])}}" class="btn btn-outline-primary btn-sm" >Like</a>
                 @else
                 <p>Log in om te liken</p>
                 @endif

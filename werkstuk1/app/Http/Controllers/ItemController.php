@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Like;
 use App\Item;
 use App\Tag;
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -13,7 +14,8 @@ class ItemController extends Controller
     //
     public function getIndex(){
         $items = Item::orderBy('created_at', 'desc')->paginate(3);
-        return view('content.index', ['items' => $items]);
+        $users = User::get()->count();
+        return view('content.index', ['items' => $items], ['users' => $users]);
     }
 
     public function getItem($id){
