@@ -3,16 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="be413ffe-ff50-475f-a3de-79e1bd88bb7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk1/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk1/app/Http/Controllers/EventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/app/Http/Controllers/EventController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk1/app/Http/Controllers/ItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/app/Http/Controllers/ItemController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk1/resources/views/admin/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/resources/views/admin/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk1/resources/views/admin/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/resources/views/admin/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk1/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/resources/views/admin/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk1/resources/views/content/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/resources/views/content/profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk1/resources/views/other/events.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/resources/views/other/events.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk1/resources/views/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/resources/views/partials/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werkstuk1/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/werkstuk1/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +86,8 @@
       <workItem from="1564471519439" duration="8779000" />
       <workItem from="1564481700985" duration="14350000" />
       <workItem from="1564558334690" duration="27511000" />
-      <workItem from="1564645771126" duration="17475000" />
+      <workItem from="1564645771126" duration="18214000" />
+      <workItem from="1564730818253" duration="611000" />
     </task>
     <servers />
   </component>
