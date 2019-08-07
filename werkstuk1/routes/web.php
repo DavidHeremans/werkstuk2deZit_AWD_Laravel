@@ -61,10 +61,19 @@ Route::post('/itemcreate', [
     'uses' => 'ItemController@postCreateItem',
     'as' => 'itemcreate'
 ]);
+Route::post('/eventcreate', [
+    'uses' => 'EventController@postCreateEvent',
+    'as' => 'eventcreate'
+]);
 
 Route::post('/itemupdate', [
     'uses' => 'ItemController@postUpdateItem',
     'as' => 'itemupdate'
+]);
+
+Route::post('/eventupdate', [
+    'uses' => 'EventController@postUpdateEvent',
+    'as' => 'eventupdate'
 ]);
 
 //Admin routes
@@ -73,17 +82,29 @@ Route::group(['prefix' => 'admin'], function (){
         'uses' => 'AdminController@getIndex',
         'as' => 'admin.index'
     ]);
-    Route::get('edit/{id}', [
-        'uses' => 'AdminController@getEdit',
-        'as' => 'admin.edit'
+    Route::get('editnews/{id}', [
+        'uses' => 'AdminController@getEditNews',
+        'as' => 'admin.editnews'
     ]);
-    Route::get('create', [
-        'uses' => 'AdminController@getCreate',
-        'as' => 'admin.create'
+    Route::get('createnews', [
+        'uses' => 'AdminController@getCreateNews',
+        'as' => 'admin.createnews'
     ]);
-    Route::get('delete/{id}', [
-        'uses' => 'AdminController@getDelete',
-        'as' => 'admin.delete'
+    Route::get('createevent', [
+        'uses' => 'AdminController@getCreateEvent',
+        'as' => 'admin.createevent'
+    ]);
+    Route::get('deletenews/{id}', [
+        'uses' => 'AdminController@getDeleteNews',
+        'as' => 'admin.deletenews'
+    ]);
+    Route::get('deleteevent/{id}', [
+        'uses' => 'AdminController@getDeleteEvent',
+        'as' => 'admin.deleteevent'
+    ]);
+    Route::get('editevent/{id}', [
+        'uses' => 'AdminController@getEditEvent',
+        'as' => 'admin.editevent'
     ]);
 
 
